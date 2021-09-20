@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("~@/assets/fonts/subset-GothamBold.woff2") format("woff2"),
+url("~@/assets/fonts/subset-GothamBold.woff") format("woff"),
+ url("~@/assets/fonts/subset-GothamBold.ttf") format("ttf"),
+ url("~@/assets/fonts/subset-GothamBold.eot"),
+ url("~@/assets/fonts/subset-GothamBold.svg");
+}
+@font-face {
+  font-family: "Gotham Light";
+  src: url("~@/assets/fonts/subset-Gotham-Light.woff2") format("woff2"),
+ url("~@/assets/fonts/subset-Gotham-Light.woff") format("woff"),
+ url("~@/assets/fonts/subset-Gotham-Light.ttf") format("ttf"),
+ url("~@/assets/fonts/subset-Gotham-Light.eot"),
+url("~@/assets/fonts/subset-Gotham-Light.svg");
+}
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("~@/assets/fonts/subset-Gotham-Medium.woff2") format("woff2"),
+ url("~@/assets/fonts/subset-Gotham-Medium.woff") format("woff"),
+ url("~@/assets/fonts/subset-Gotham-Medium.ttf") format("ttf"),
+ url("~@/assets/fonts/subset-Gotham-Medium.eot"),
+url("~@/assets/fonts/subset-Gotham-Medium.svg");
+}
+@font-face {
+  font-family: "Gotham Book";
+  src: url("~@/assets/fonts/subset-GothamBook.woff2") format("woff2"),
+ url("~@/assets/fonts/subset-GothamBook.woff") format("woff"),
+ url("~@/assets/fonts/subset-GothamBook.ttf") format("ttf"),
+ url("~@/assets/fonts/subset-GothamBook.eot"),
+url("~@/assets/fonts/subset-GothamBook.svg");
+}

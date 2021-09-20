@@ -1,0 +1,67 @@
+ @font-face {
+    font-family: 'GothamLight';
+    src: url('subset-GothamLight.eot');
+    src: url('subset-GothamLight.eot?#iefix') format('embedded-opentype'),
+        url('subset-GothamLight.woff2') format('woff2'),
+        url('subset-GothamLight.woff') format('woff'),
+        url('subset-GothamLight.ttf') format('truetype'),
+        url('subset-GothamLight.svg#GothamLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('subset-GothamBook.eot');
+    src: url('subset-GothamBook.eot?#iefix') format('embedded-opentype'),
+        url('subset-GothamBook.woff2') format('woff2'),
+        url('subset-GothamBook.woff') format('woff'),
+        url('subset-GothamBook.ttf') format('truetype'),
+        url('subset-GothamBook.svg#GothamBook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: 'Akkurat';
+    src: url('akkurat.ttf');
+    src: url('akkurat.ttf') format('embedded-opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akkurat';
+    src: url('subset-Gotham-Medium.eot');
+    src: url('subset-Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('subset-Gotham-Medium.woff2') format('woff2'),
+        url('subset-Gotham-Medium.woff') format('woff'),
+        url('akkurat.ttf') format('truetype'),
+        url('subset-Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akkurat';
+    src: url('akkurat.ttf');
+    /* src: url('subset-GothamBold.eot?#iefix') format('embedded-opentype'),
+        url('subset-GothamBold.woff2') format('woff2'),
+        url('subset-GothamBold.woff') format('woff'),
+        url('subset-GothamBold.ttf') format('truetype'),
+        url('subset-GothamBold.svg#GothamBold') format('svg'); */
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Akkurat std';
+    src: url('akkurat.ttf');
+    src: url('subset-GothamBold.eot?#iefix') format('embedded-opentype'),
+        url('subset-GothamBold.woff2') format('woff2'),
+        url('subset-GothamBold.woff') format('woff'),
+        url('subset-GothamBold.ttf') format('truetype'),
+        url('subset-GothamBold.svg#GothamBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

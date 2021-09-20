@@ -1,0 +1,77 @@
+ <b-col col lg="4" sm="12" md="12" class="pl-1">
+
+         <div style="display:inline-flex;margin-top:5px;margin-left:-50%;" text-align='left'>
+
+         <button type="button" class="btn btn-link" stye="text-decoration:none;" @click="mapVisible()"> 
+         <img src="../assets/location.png" height="25px" />
+         <strong style="font-size:14px;color:gray;font-weight:400;text-align:left;" >{{ $t("search.map") }} </strong></button>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-link" @click="filterVisible()">
+          <img src="../assets/filter.png" height="23px" />
+           <strong style="font-size:14px;color:gray;font-weight:400;text-align:left;" > {{ $t("search.filters") }} </strong></button>
+         </div> <hr style="margin-top:5px;">
+               <div v-if="active_map && isLoading==false">
+               <!--div id="map" ></div-->
+                    <MarksMap
+                      :services="responses"
+                      :latitude="mapLat"
+                      :longitude="mapLong"
+                      :zoom="4" 
+                    ></MarksMap>
+                  </b-card>
+                </div>
+<div v-if="active_filter">
+ <p class="text-left">
+                    <b-form-radio-group
+                      stacked
+                      id="radio-group-2"
+                      @click="toggleModal"
+                      v-model="categoryId_filter"
+                      name="radio-sub-component"
+                    >
+                      <b-form-radio value="1" @change="callack('1')">{{
+                        $t("search.medical-care")
+                      }}</b-form-radio>
+                      <b-form-radio value="2" @change="callack('2')">{{
+                        $t("search.pharmacy")
+                      }}</b-form-radio>
+                      <b-form-radio value="3" @change="callack('3')">{{
+                        $t("search.fitness")
+                      }}</b-form-radio>
+                      <b-form-radio value="4" @change="callack('4')">{{
+                        $t("search.health-wellbeing")
+                      }}</b-form-radio>
+                      <b-form-radio value="4" @change="callack('5')">{{
+                        $t("search.senior-care")
+                      }}</b-form-radio>
+                      <b-form-radio value="4" @change="callack('6')">{{
+                        $t("search.alternative-medicine")
+                      }}</b-form-radio>
+                      <!--b-form-radio value="4" @change="callack('')">{{ $t('search.near-by')}}</b-form-radio-->
+                    </b-form-radio-group>
+                    <b-form-group
+                      id="input-group-1"
+                      :label="$t('search.choose-service')"
+                      label-for="input-1"
+                    >
+                      <select
+                        required
+                        v-model="speciality_filter"
+                        @change="callack(categoryId_filter)"
+                        class="form-control"
+                        id="input-1"
+                      >
+                        <option
+                          v-for="item in specialities"
+                          :value="item.id"
+                          :key="item.name"
+                          >{{ item.name }}</option
+                        >
+                      </select>
+                    </b-form-group>
+                  </p>
+</div>
+
+         </b-col>
+
+
+
